@@ -1,6 +1,6 @@
 function getLoggedInUser() {
     
-    return { username: '' }; 
+    return { username: ' ' }; 
   }
   
   function displayWelcomeMessage(user) {
