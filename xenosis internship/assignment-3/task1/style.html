@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-details">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="main-image" src="https://suprememobiles.in/cdn/shop/products/iPhone-13-Now-Available_21d47bee-afb8-4112-ab8a-d9ee20e023e7.jpg?v=1662034469oduct-image.jpg" alt="Product Image">
+                </div>
+                <div class="thumbnails">
+                    <img src="https://suprememobiles.in/cdn/shop/products/iPhone-13-Now-Available_21d47bee-afb8-4112-ab8a-d9ee20e023e7.jpg?v=1662034469"
+                        alt="Thumbnail 1" onclick="changeImage('thumbnail1.jpg')">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Thumbnail 2" onclick="changeImage('thumbnail2.jpg')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4Yup27SDVizfDAqqg85udshXriS66ye_pw&s"
+                        alt="Thumbnail 3" onclick="changeImage('thumbnail3.jpg')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>iPhone-13</h1>
+                <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit necessitatibus modi
+                    nemo explicabo unde non est cupiditate pariatur omnis..</p>
+                <p>Price: $100.00</p>
+                <div class="options">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <div id="reviews-list">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+            <h3>Write a Review</h3>
+            <form id="review-form" onsubmit="submitReview(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="4" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    <script src="style.js"></script>
+</body>
+
+</html>
